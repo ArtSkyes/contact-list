@@ -1,0 +1,70 @@
+{
+  "contacts": [
+    {
+      "name": "Juan dela Cruz",
+      "email": "juan.delacruz@artcute.com",
+      "phone": "092-123-1231",
+      "id": "1"
+    },
+    {
+      "name": "Maria Clara",
+      "email": "maria.clara@artcute.com",
+      "phone": "0920-987-65432",
+      "id": "2"
+    },
+    {
+      "name": "Jose Rizal",
+      "email": "jose.rizal@artcute.com",
+      "phone": "0918-567-8901",
+      "id": "3"
+    },
+    {
+      "id": "4",
+      "name": "Andres Bonifacio",
+      "email": "andres.bonifacio@artcute.com",
+      "phone": "0921-765-4321"
+    },
+    {
+      "id": "5",
+      "name": "Gabriela Silang",
+      "email": "gabriela.silang@artcute.com",
+      "phone": "0919-234-5678"
+    },
+    {
+      "id": "6",
+      "name": "Apolinario Mabini",
+      "email": "apolinario.mabini@artcute.com",
+      "phone": "0923-345-6789"
+    },
+    {
+      "id": "7",
+      "name": "Emilio Aguinaldo",
+      "email": "emilio.aguinaldo@artcute.com",
+      "phone": "0917-456-7890"
+    },
+    {
+      "id": "8",
+      "name": "Melchora Aquino",
+      "email": "melchora.aquino@artcute.com",
+      "phone": "0922-567-8901"
+    },
+    {
+      "name": "Diego Silang",
+      "email": "diego.silang@artcute.com",
+      "phone": "0918-678-9012",
+      "id": "9"
+    },
+    {
+      "id": "3844",
+      "name": "tes",
+      "email": "test@qweqwe.com",
+      "phone": "1231231231"
+    },
+    {
+      "id": "cdf8",
+      "name": "qwe",
+      "email": "qwe@qwe.com",
+      "phone": "12312123122"
+    }
+  ]
+}
