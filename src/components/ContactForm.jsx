@@ -27,7 +27,9 @@ const ContactForm = ({ contact, onSubmit, onClose }) => {
       case "phone":
         if (!value.trim()) {
           error = "Contact number is required";
-        } else if (!/^\d{11}$/.test(value)) {
+        } else if (!/^\d+$/.test(value)) {
+          error = "Contact number must only contain numbers";
+        } else if (value.length !== 11) {
           error = "Contact number must be 11 digits";
         }
         break;
@@ -41,17 +43,11 @@ const ContactForm = ({ contact, onSubmit, onClose }) => {
     const { name, value } = e.target;
     if (name === "name") setName(value);
     if (name === "email") setEmail(value);
-    if (name === "phone") {
-      const phoneNumber = value.replace(/\D/g, "").slice(0, 11);
-      setPhone(phoneNumber);
-    }
+    if (name === "phone") setPhone(value);
 
     setErrors((prev) => ({
       ...prev,
-      [name]: validateField(
-        name,
-        name === "phone" ? value.replace(/\D/g, "") : value
-      ),
+      [name]: validateField(name, value),
     }));
   };
 
@@ -127,6 +123,7 @@ const ContactForm = ({ contact, onSubmit, onClose }) => {
               </p>
             )}
           </div>
+
           <div>
             <label
               className="block text-gray-700 text-sm font-bold mb-2"
@@ -151,6 +148,7 @@ const ContactForm = ({ contact, onSubmit, onClose }) => {
               </p>
             )}
           </div>
+
           <div className="flex items-center justify-between pt-4">
             <button
               className="bg-white hover:bg-purple-500 text-black font-bold py-2 px-4 rounded-full focus:outline-none focus:shadow-outline border-2 border-purple-500"
